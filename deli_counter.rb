@@ -12,7 +12,7 @@ def line(people)
     puts "The line is currently:"
   end
 end
-=end
+
 
 def line(katz_deli)
   if katz_deli.empty?
@@ -29,3 +29,5 @@ def line(katz_deli)
    katz_deli.join(", ")
   end
 end
+
+=end
