@@ -10,7 +10,7 @@ def line(katz_deli)
   else
     katz_deli.map.with_index do |person, i|
       "#{i + 1}. #{person}"
-    end.join("\n")
+    end.join
     puts "The line is currently: #{katz_deli}"
   end
 end
