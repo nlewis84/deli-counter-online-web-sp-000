@@ -25,7 +25,7 @@ def line(katz_deli)
     binding.pry
   elsif katz_deli.count >= 2
     katz_deli.each do |index|
-      index.prepend("#{index + 1}. ")
+      index.prepend("#{index.to_s + 1}. ")
     binding.pry
     end
    katz_deli.join(", ")
