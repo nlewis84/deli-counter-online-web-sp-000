@@ -4,6 +4,7 @@ require "pry"
 
 katz_deli = []
 
+binding.pry
 =begin
 def line(people)
   if people.empty?
