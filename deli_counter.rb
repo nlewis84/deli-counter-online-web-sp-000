@@ -11,25 +11,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     binding.pry
+    katz_deli.map.with_index do |person, i|
+      "#{i + 1}. #{person}"
+    end.join("\n")
     puts "The line is currently: #{katz_deli}"
   end
 end
-
-=begin
-def line(katz_deli)
-  if katz_deli.empty?
-    puts "The line is currently empty."
-  elsif katz_deli.count == 1
-    katz_deli.first().prepend("1. ")
-    katz_deli.join
-    binding.pry
-  elsif katz_deli.count >= 2
-    katz_deli.each do |index|
-      index.prepend("#{index.to_s + 1}. ")
-    binding.pry
-    end
-   katz_deli.join(", ")
-  end
-end
-
-=end
