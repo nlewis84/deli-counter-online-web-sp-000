@@ -14,15 +14,15 @@ def line(people)
 end
 =end
 
-def line(people)
-  if people.count == 1
-    people.first().prepend("1. ")
-    people.join
+def line(katz_deli)
+  if katz_deli.count == 1
+    katz_deli.first().prepend("1. ")
+    katz_deli.join
     binding.pry
-  elsif people.count >= 2
-    people.each do |index|
+  elsif katz_deli.count >= 2
+    katz_deli.each do |index|
       index.prepend("#{index + 1}. ")
     end
-   people.join(", ")
+   katz_deli.join(", ")
   end
 end
