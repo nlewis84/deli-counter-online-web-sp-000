@@ -22,8 +22,8 @@ end
 
 def now_serving(katz_deli)
   if katz_deli[0]
-    puts katz_deli[0]
-    
+    puts katz_deli.shift
   else
+    
   end
 end
