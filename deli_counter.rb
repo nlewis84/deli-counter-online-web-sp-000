@@ -13,11 +13,12 @@ def line(people)
   
 end
 
-  if array.count == 1
-    array.join
-  elsif array.count == 2
-   array.join(" and ")
-  elsif array.count >= 3
-   array.last().prepend("and ")
-   array.join(", ")
+  if people.count == 1
+    people.first().prepend("1. ")
+    people.join
+  elsif people.count == 2
+   people.join(" and ")
+  elsif people.count >= 3
+   people.last().prepend("and ")
+   people.join(", ")
   end
