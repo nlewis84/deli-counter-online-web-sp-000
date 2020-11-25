@@ -14,6 +14,7 @@ def line(people)
 end
 =end
 
+def line(people)
   if people.count == 1
     people.first().prepend("1. ")
     people.join
@@ -24,3 +25,4 @@ end
     end
    people.join(", ")
   end
+end
