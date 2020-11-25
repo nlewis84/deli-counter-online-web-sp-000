@@ -5,7 +5,7 @@ require "pry"
 katz_deli = []
 
 binding.pry
-=begin
+
 def line(people)
   if people.empty?
     puts "The line is currently empty."
@@ -14,7 +14,7 @@ def line(people)
   end
 end
 
-
+=begin
 def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
