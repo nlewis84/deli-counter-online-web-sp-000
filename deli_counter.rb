@@ -20,7 +20,7 @@ def line(katz_deli)
   elsif katz_deli.count == 1
     katz_deli.first().prepend("1. ")
     katz_deli.join
-    
+    binding.pry
   elsif katz_deli.count >= 2
     katz_deli.each do |index|
       index.prepend("#{index + 1}. ")
