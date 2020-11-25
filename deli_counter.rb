@@ -18,10 +18,11 @@ def line(katz_deli)
   if katz_deli.count == 1
     katz_deli.first().prepend("1. ")
     katz_deli.join
-    binding.pry
+    
   elsif katz_deli.count >= 2
     katz_deli.each do |index|
       index.prepend("#{index + 1}. ")
+    binding.pry
     end
    katz_deli.join(", ")
   end
