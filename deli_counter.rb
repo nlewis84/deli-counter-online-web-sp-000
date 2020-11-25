@@ -15,7 +15,9 @@ end
 =end
 
 def line(katz_deli)
-  if katz_deli.count == 1
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  elsif katz_deli.count == 1
     katz_deli.first().prepend("1. ")
     katz_deli.join
     
