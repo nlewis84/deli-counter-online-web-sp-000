@@ -10,7 +10,7 @@ def line(katz_deli)
   else
     katz_deli.each_with_index do |person, i|
       person.prepend(" #{i + 1}. ")
-    end.join
-    puts "The line is currently: #{katz_deli}"
+    end
+    puts "The line is currently: #{katz_deli.join}"
   end
 end
